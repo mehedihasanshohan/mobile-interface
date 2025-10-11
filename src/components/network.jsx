@@ -1,9 +1,9 @@
 import React from 'react'
 
-const network = () => {
+const Network = () => {
   return (
     <div>network</div>
   )
 }
 
-export default network
+export default Network

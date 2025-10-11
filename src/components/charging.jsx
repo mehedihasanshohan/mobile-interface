@@ -1,9 +1,9 @@
 import React from 'react'
 
-const charging = () => {
+const Charging = () => {
   return (
     <div>charging</div>
   )
 }
 
-export default charging
+export default Charging
