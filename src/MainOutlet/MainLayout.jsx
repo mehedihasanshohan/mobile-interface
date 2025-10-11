@@ -7,7 +7,7 @@ import Logo from '../components/Logo';
 
 const MainLayout = () => {
 
-   const [battery, setBattery] = useState(95);
+   const [battery, setBattery] = useState(22);
    const [userName, setUserName] = useState('Mehedi Hasan SHohan');
 
 
@@ -24,7 +24,7 @@ const MainLayout = () => {
       <div>
         <Logo></Logo>
         <Navbar battery={battery}></Navbar>
-        <Outlet context={{ userName, setUserName }}></Outlet>
+        <Outlet context={{ userName, setUserName , battery, setBattery}}></Outlet>
         <HomeMenu></HomeMenu>
       </div>
       <Keypad></Keypad>

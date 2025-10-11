@@ -16,7 +16,7 @@ const Keypad = () => {
         {buttons.map((btn) => (
           <button
             key={btn}
-            className="bg-gray-800 text-sm font-bold py-2 rounded-lg shadow hover:bg-gray-300 active:bg-gray-400 transition"
+            className="bg-gray-800 text-sm font-bold py-2 rounded-lg text-white/10 shadow hover:bg-gray-300 active:bg-gray-400 transition"
           >
             {btn}
           </button>
@@ -27,3 +27,4 @@ const Keypad = () => {
 }
 
 export default Keypad;
+

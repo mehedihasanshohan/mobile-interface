@@ -9,6 +9,9 @@ import DisplaySetting from "../pages/DisplaySetting/DisplaySetting";
 import WallPaperSetting from "../pages/DisplaySetting/WallPaperSetting";
 import WelcomeText from "../pages/DisplaySetting/WelcomeText";
 import Dial from "../pages/Dial/Dial";
+import LowBattery from "../pages/LowBattry/LowBattery";
+import BatteryCharge from "../pages/BatteryCharge/BatteryCharge";
+import Shutdown from "../pages/Shutdown/Shutdown";
 
 const router = createBrowserRouter([
   {
@@ -45,12 +48,26 @@ const router = createBrowserRouter([
         path: '/settings/display/welcometext',
         element: <WelcomeText></WelcomeText>
       },
-       {
+      {
         path: '/dial',
         element: <Dial></Dial>
-       }
+      },
+      {
+        path: '/low-battery',
+        element: <LowBattery></LowBattery>
+      },
+      {
+        path: '/battery-charge',
+        element: <BatteryCharge></BatteryCharge>
+      },
+      {
+        path: '/shutdown',
+        element: <Shutdown></Shutdown>
+      }
+
     ]
   },
+
 
 ]);
 
