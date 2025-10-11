@@ -8,6 +8,8 @@ import Logo from '../components/Logo';
 const MainLayout = () => {
 
    const [battery, setBattery] = useState(95);
+   const [userName, setUserName] = useState('Mehedi Hasan SHohan');
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,7 +24,7 @@ const MainLayout = () => {
       <div>
         <Logo></Logo>
         <Navbar battery={battery}></Navbar>
-        <Outlet></Outlet>
+        <Outlet context={{ userName, setUserName }}></Outlet>
         <HomeMenu></HomeMenu>
       </div>
       <Keypad></Keypad>

@@ -6,6 +6,8 @@ import MainLayout from './../MainOutlet/MainLayout';
 import HomeDisplay from './../components/HomeDisplay';
 import Settings from "../pages/Settings/Settings";
 import DisplaySetting from "../pages/DisplaySetting/DisplaySetting";
+import WallPaperSetting from "../pages/DisplaySetting/WallPaperSetting";
+import WelcomeText from "../pages/DisplaySetting/WelcomeText";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
       {
         path: '/settings/display',
         element: <DisplaySetting></DisplaySetting>
+      },
+      {
+        path: '/settings/display/wallpaper',
+        element: <WallPaperSetting></WallPaperSetting>
+      },
+      {
+        path: '/settings/display/welcometext',
+        element: <WelcomeText></WelcomeText>
       }
     ]
   },
