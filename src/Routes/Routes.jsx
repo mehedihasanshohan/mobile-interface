@@ -8,6 +8,7 @@ import Settings from "../pages/Settings/Settings";
 import DisplaySetting from "../pages/DisplaySetting/DisplaySetting";
 import WallPaperSetting from "../pages/DisplaySetting/WallPaperSetting";
 import WelcomeText from "../pages/DisplaySetting/WelcomeText";
+import Dial from "../pages/Dial/Dial";
 
 const router = createBrowserRouter([
   {
@@ -43,7 +44,11 @@ const router = createBrowserRouter([
       {
         path: '/settings/display/welcometext',
         element: <WelcomeText></WelcomeText>
-      }
+      },
+       {
+        path: '/dial',
+        element: <Dial></Dial>
+       }
     ]
   },
 
