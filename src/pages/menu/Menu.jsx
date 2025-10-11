@@ -43,7 +43,7 @@ const Menu = () => {
           </Link>
         </div>
         <div>
-          <Link to='stopwatch'>
+          <Link to='/stopwatch'>
             <img src={stopwatch} className='w-12 h-12' alt="" />
           </Link>
         </div>
