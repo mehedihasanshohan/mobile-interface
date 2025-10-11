@@ -4,6 +4,8 @@ import Calendar from "../pages/calendar/calendar";
 import Stopwatch from "../pages/stopwatch/stopwatch";
 import MainLayout from './../MainOutlet/MainLayout';
 import HomeDisplay from './../components/HomeDisplay';
+import Settings from "../pages/Settings/Settings";
+import DisplaySetting from "../pages/DisplaySetting/DisplaySetting";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
       {
         path: '/stopwatch',
         element: <Stopwatch></Stopwatch>
+      },
+      {
+        path: '/settings',
+        element: <Settings></Settings>
+      },
+      {
+        path: '/settings/display',
+        element: <DisplaySetting></DisplaySetting>
       }
     ]
   },
