@@ -10,6 +10,9 @@ const HomeMenu = () => {
       <Link to='/settings'>
        <p>Settings</p>
       </Link>
+      <Link to='/'>
+       Home
+      </Link>
     </div>
   )
 }
