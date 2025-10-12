@@ -12,6 +12,8 @@ import Dial from "../pages/Dial/Dial";
 import LowBattery from "../pages/LowBattry/LowBattery";
 import BatteryCharge from "../pages/BatteryCharge/BatteryCharge";
 import Shutdown from "../pages/Shutdown/Shutdown";
+import ScreenLock from "../pages/ScreenLock/ScreenLock";
+import Sim from "../pages/Sim/Sim";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,9 @@ const router = createBrowserRouter([
     errorElement: <div>Error...</div>,
     children: [
       {index: true, element: <HomeDisplay></HomeDisplay> },
+      // {
+      //   index: true, element: <ScreenLock></ScreenLock>
+      // },
       {
         path: '/menu',
         element: <Menu></Menu>
@@ -63,6 +68,10 @@ const router = createBrowserRouter([
       {
         path: '/shutdown',
         element: <Shutdown></Shutdown>
+      },
+      {
+        path: '/sim',
+        element: <Sim></Sim>
       }
 
     ]

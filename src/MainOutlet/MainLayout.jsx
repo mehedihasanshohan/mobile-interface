@@ -7,7 +7,7 @@ import Logo from '../components/Logo';
 
 const MainLayout = () => {
 
-   const [battery, setBattery] = useState(22);
+   const [battery, setBattery] = useState(82);
    const [userName, setUserName] = useState('Mehedi Hasan SHohan');
 
 
