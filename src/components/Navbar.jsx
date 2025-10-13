@@ -24,7 +24,7 @@ const Navbar = ({ battery}) => {
   useEffect(() => {
     if (battery === 20) {
       navigate("/low-battery");
-    } else if (battery <= 10) {
+    } else if (battery <= 0) {
       navigate("/shutdown");
     }
   }, [battery, navigate]);

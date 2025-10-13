@@ -7,14 +7,14 @@ import Logo from '../components/Logo';
 
 const MainLayout = () => {
 
-   const [battery, setBattery] = useState(82);
+   const [battery, setBattery] = useState(6);
    const [userName, setUserName] = useState('Mehedi Hasan SHohan');
 
 
   useEffect(() => {
     const interval = setInterval(() => {
       setBattery(prev => (prev > 0 ? prev - 1 : 0)); // 0% theke kom hobe na
-    }, 5000); // 2 sec
+    }, 5000); // 5 sec por por 1% charge kome jabe
 
     return () => clearInterval(interval);
   }, []);
