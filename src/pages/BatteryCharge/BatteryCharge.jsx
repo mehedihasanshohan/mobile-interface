@@ -6,16 +6,38 @@ const BatteryCharge = () => {
   const navigate = useNavigate();
   const {  setBattery} = useOutletContext();
 
-  useEffect(() => {
+  // useEffect(() => {
+  //   // Simulate charging process
+  //   const interval = setInterval(() => {
+  //     setCharge((prev) => {
+  //       if (prev >= 100) {
+  //         clearInterval(interval);
+  //   setBattery(100);
+  //         setTimeout(() => {
+  //           navigate("/");
+  //         }, 1000);
+  //         return 100;
+  //       }
+  //       return prev + 10;
+  //     });
+  //   }, 500); // increase 10% every 500ms
+
+  //   return () => clearInterval(interval);
+  // }, [navigate, setBattery]);
+
+   useEffect(() => {
     // Simulate charging process
     const interval = setInterval(() => {
       setCharge((prev) => {
         if (prev >= 100) {
           clearInterval(interval);
-    setBattery(100);
+
+          //  move setBattery and navigate OUTSIDE the state setter
           setTimeout(() => {
+            setBattery(100);
             navigate("/");
           }, 1000);
+
           return 100;
         }
         return prev + 10;

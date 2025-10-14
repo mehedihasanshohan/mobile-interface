@@ -10,6 +10,7 @@ const MainLayout = () => {
    const [battery, setBattery] = useState(22);
    const [userName, setUserName] = useState('Mehedi Hasan SHohan');
    const [dialNumber, setDialNumber] = useState('');
+   const [callStatus, setCallStatus] = useState('');
 
 
   useEffect(() => {
@@ -25,10 +26,20 @@ const MainLayout = () => {
       <div>
         <Logo></Logo>
         <Navbar battery={battery}></Navbar>
-        <Outlet context={{ userName, setUserName , battery, setBattery, dialNumber, setDialNumber}}></Outlet>
+        <Outlet context={{
+          userName, setUserName ,
+          battery, setBattery,
+          dialNumber, setDialNumber,
+          callStatus, setCallStatus
+        }}></Outlet>
         <HomeMenu></HomeMenu>
       </div>
-      <Keypad dialNumber={dialNumber} setDialNumber={setDialNumber}></Keypad>
+      <Keypad
+        dialNumber={dialNumber}
+        setDialNumber={setDialNumber}
+        setCallStatus={setCallStatus}
+        callStatus={callStatus}
+      ></Keypad>
     </div>
   )
 }
