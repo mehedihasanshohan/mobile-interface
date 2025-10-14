@@ -7,8 +7,9 @@ import Logo from '../components/Logo';
 
 const MainLayout = () => {
 
-   const [battery, setBattery] = useState(6);
+   const [battery, setBattery] = useState(22);
    const [userName, setUserName] = useState('Mehedi Hasan SHohan');
+   const [dialNumber, setDialNumber] = useState('');
 
 
   useEffect(() => {
@@ -24,10 +25,10 @@ const MainLayout = () => {
       <div>
         <Logo></Logo>
         <Navbar battery={battery}></Navbar>
-        <Outlet context={{ userName, setUserName , battery, setBattery}}></Outlet>
+        <Outlet context={{ userName, setUserName , battery, setBattery, dialNumber, setDialNumber}}></Outlet>
         <HomeMenu></HomeMenu>
       </div>
-      <Keypad></Keypad>
+      <Keypad dialNumber={dialNumber} setDialNumber={setDialNumber}></Keypad>
     </div>
   )
 }

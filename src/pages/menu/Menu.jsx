@@ -78,6 +78,7 @@ const Menu = () => {
           </Link>
         </div>
       </div>
+      {/* <p>selected icons</p> */}
     </div>
 
   )
