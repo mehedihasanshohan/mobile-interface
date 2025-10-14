@@ -17,7 +17,6 @@ const MainLayout = () => {
     const interval = setInterval(() => {
       setBattery(prev => (prev > 0 ? prev - 1 : 0)); // 0% theke kom hobe na
     }, 15000); // 5 sec por por 1% charge kome jabe
-
     return () => clearInterval(interval);
   }, []);
 

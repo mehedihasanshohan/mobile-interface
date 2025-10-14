@@ -1,14 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { FiPhone } from "react-icons/fi";
 import contactsData from "../../../public/data/contacts.json";
+import { useNavigate, useOutletContext } from "react-router";
 
 const Contacts = () => {
+  const { setDialNumber, setCallStatus } = useOutletContext();
   const [contacts, setContacts] = useState([]);
   const [search, setSearch] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     setContacts(contactsData);
   }, []);
+
+   const handleCallClick = (contact) => {
+    setDialNumber(contact);
+    setCallStatus(""); // reset previous message
+    navigate("/dial"); // go to dial screen
+  };
 
   const filteredContacts = contacts.filter(
     (contact) =>
@@ -45,7 +54,9 @@ const Contacts = () => {
                 <p className="font-semibold text-sm">{contact.name}</p>
                 <p className="text-xs text-gray-400">{contact.number}</p>
               </div>
-              <button className="p-2 bg-green-600 hover:bg-green-500 rounded-full text-white">
+              <button
+                onClick={() => handleCallClick(contact.number)}
+                className="p-2 bg-green-600 hover:bg-green-500 rounded-full text-white">
                 <FiPhone size={16} />
               </button>
             </div>
