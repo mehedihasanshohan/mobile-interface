@@ -2,9 +2,8 @@ import React, { useEffect } from 'react';
 import { useOutletContext } from 'react-router';
 
 const Dial = () => {
-  const { dialNumber, callStatus, setCallStatus } = useOutletContext();
+  const { dialNumber,  callStatus, setCallStatus } = useOutletContext();
 
-  // ✅ useEffect ensures this only runs when dialNumber changes
   useEffect(() => {
     if (dialNumber.length === 11) {
       setCallStatus('Press dial button to Make a call');
@@ -23,6 +22,7 @@ const Dial = () => {
           <h2 className="text-xl font-mono tracking-widest">{dialNumber}</h2>
           {callStatus && (
             <p className="mt-2 text-green-400 animate-pulse">{callStatus}</p>
+
           )}
         </>
       ) : (
