@@ -7,7 +7,7 @@ import Logo from '../components/Logo';
 
 const MainLayout = () => {
 
-   const [battery, setBattery] = useState(22);
+   const [battery, setBattery] = useState(92);
    const [userName, setUserName] = useState('Mehedi Hasan SHohan');
    const [dialNumber, setDialNumber] = useState('');
    const [callStatus, setCallStatus] = useState('');
@@ -16,7 +16,7 @@ const MainLayout = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setBattery(prev => (prev > 0 ? prev - 1 : 0)); // 0% theke kom hobe na
-    }, 5000); // 5 sec por por 1% charge kome jabe
+    }, 15000); // 5 sec por por 1% charge kome jabe
 
     return () => clearInterval(interval);
   }, []);

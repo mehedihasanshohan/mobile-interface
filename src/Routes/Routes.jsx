@@ -14,6 +14,7 @@ import BatteryCharge from "../pages/BatteryCharge/BatteryCharge";
 import Shutdown from "../pages/Shutdown/Shutdown";
 import ScreenLock from "../pages/ScreenLock/ScreenLock";
 import Sim from "../pages/Sim/Sim";
+import Contacts from "../components/Contacts/Contacts";
 
 const router = createBrowserRouter([
   {
@@ -72,6 +73,10 @@ const router = createBrowserRouter([
       {
         path: '/sim',
         element: <Sim></Sim>
+      },
+      {
+        path: '/contacts',
+        element: <Contacts></Contacts>
       }
 
     ]

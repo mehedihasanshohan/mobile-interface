@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Abbu",
+    "number": "01712345678",
+    "operator": "Grameenphone"
+  },
+  {
+    "id": 2,
+    "name": "Rahat Hasan",
+    "number": "01898765432",
+    "operator": "Robi"
+  },
+  {
+    "id": 3,
+    "name": "Mehedi Hasan Shohan",
+    "number": "01955667788",
+    "operator": "Banglalink"
+  },
+  {
+    "id": 4,
+    "name": "Diraj Chacchu",
+    "number": "01699887766",
+    "operator": "Airtel"
+  }
+]
