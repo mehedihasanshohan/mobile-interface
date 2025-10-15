@@ -15,6 +15,9 @@ import Shutdown from "../pages/Shutdown/Shutdown";
 import ScreenLock from "../pages/ScreenLock/ScreenLock";
 import Sim from "../pages/Sim/Sim";
 import Contacts from "../components/Contacts/Contacts";
+import AboutPhone from "../pages/AboutPhone/AboutPhone";
+import PhoneDetails from "../pages/AboutPhone/PhoneDetails";
+import Developer from "../pages/AboutPhone/Developer";
 
 const router = createBrowserRouter([
   {
@@ -77,7 +80,20 @@ const router = createBrowserRouter([
       {
         path: '/contacts',
         element: <Contacts></Contacts>
-      }
+      },
+      {
+        path: '/about-phone',
+        element: <AboutPhone></AboutPhone>
+      },
+      {
+        path: '/phone',
+        element: <PhoneDetails></PhoneDetails>
+      },
+      {
+        path: '/developer',
+        element: <Developer></Developer>
+      },
+
 
     ]
   },

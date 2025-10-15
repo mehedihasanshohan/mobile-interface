@@ -56,7 +56,7 @@ const Contacts = () => {
               </div>
               <button
                 onClick={() => handleCallClick(contact.number)}
-                className="p-2 bg-green-600 hover:bg-green-500 rounded-full text-white">
+                className="p-2 bg-green-600 hover:bg-green-500 cursor-pointer rounded-full text-white">
                 <FiPhone size={16} />
               </button>
             </div>
