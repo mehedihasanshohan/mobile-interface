@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router'
 
-const AboutPhone = () => {
+const BlackLists = () => {
   const navigate = useNavigate();
 
   return (
@@ -9,23 +9,16 @@ const AboutPhone = () => {
                     text-white border-r-12 border-l-12 border-gray-800
                     overflow-x-auto scrollbar-thin scrollbar-thumb-gray-700
                     scrollbar-track-gray-800">
+      <p>no blacklists number added</p>
       <div
-          className="bg-gray-600 px-4 py-2 rounded-xl text-sm cursor-pointer mt-2 mb-2
-                     hover:bg-orange-400 hover:text-white transition whitespace-nowrap"
-          onClick={() => navigate("/phone")}
-        >
-          About Phone
-        </div>
-
-        <div
           className="bg-gray-600 px-4 py-2 rounded-xl text-sm cursor-pointer
                      hover:bg-orange-400 hover:text-white transition whitespace-nowrap"
-          onClick={() => navigate("/developer")}
+          onClick={() => navigate("/sim/blacklists/addBlacklist")}
         >
-          About Developer
+          Add a Blacklist Number
         </div>
     </div>
   )
 }
 
-export default AboutPhone
+export default BlackLists

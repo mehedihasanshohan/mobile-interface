@@ -18,6 +18,7 @@ import Contacts from "../components/Contacts/Contacts";
 import AboutPhone from "../pages/AboutPhone/AboutPhone";
 import PhoneDetails from "../pages/AboutPhone/PhoneDetails";
 import Developer from "../pages/AboutPhone/Developer";
+import BlackLists from "../pages/Sim/BlackLists";
 
 const router = createBrowserRouter([
   {
@@ -93,7 +94,10 @@ const router = createBrowserRouter([
         path: '/developer',
         element: <Developer></Developer>
       },
-
+      {
+        path: '/sim/blacklists',
+        element: <BlackLists></BlackLists>
+      }
 
     ]
   },
