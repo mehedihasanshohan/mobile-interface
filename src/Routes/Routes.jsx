@@ -19,6 +19,7 @@ import AboutPhone from "../pages/AboutPhone/AboutPhone";
 import PhoneDetails from "../pages/AboutPhone/PhoneDetails";
 import Developer from "../pages/AboutPhone/Developer";
 import BlackLists from "../pages/Sim/BlackLists";
+import Alarm from "../pages/Alarm/Alarm";
 
 const router = createBrowserRouter([
   {
@@ -97,6 +98,10 @@ const router = createBrowserRouter([
       {
         path: '/sim/blacklists',
         element: <BlackLists></BlackLists>
+      },
+      {
+        path: '/alarm',
+        element: <Alarm></Alarm>
       }
 
     ]

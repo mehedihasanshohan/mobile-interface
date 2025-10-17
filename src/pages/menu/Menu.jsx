@@ -5,10 +5,10 @@ import games from '/games.png'
 import message from '/message.png'
 import stopwatch from '/stopwatch.png'
 import browser from '/browser.png'
-import chrome from '/chrome.png'
 import notes from '/notes.png'
 import radio from '/radio.png'
 import sim from '/sim.png'
+import alarm from '/alarm.png'
 import security from '/security.png'
 import { Link } from 'react-router'
 
@@ -53,8 +53,8 @@ const Menu = () => {
           </Link>
         </div>
         <div>
-          <Link to='/chrome'>
-            <img src={chrome} className='w-12 h-12' alt="" />
+          <Link to='/alarm'>
+            <img src={alarm} className='w-10 h-10' alt="" />
           </Link>
           </div>
         <div>
